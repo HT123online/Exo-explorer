@@ -1,0 +1,352 @@
+[gd_scene load_steps=11 format=3 uid="uid://5avfljh4tbxa"]
+
+[ext_resource type="Script" path="res://informacion.gd" id="1_3f55r"]
+[ext_resource type="Texture2D" uid="uid://dltfq28ua4dkv" path="res://2.png" id="2_62pcq"]
+[ext_resource type="FontFile" uid="uid://db1yy8niki1pn" path="res://Montserrat-Regular.ttf" id="3_s56n6"]
+[ext_resource type="Theme" uid="uid://5or8aaf57rb7" path="res://aspecto.tres" id="4_0moaq"]
+[ext_resource type="Texture2D" uid="uid://vrcsg005sood" path="res://grafico1.jpg" id="4_01kj7"]
+[ext_resource type="Texture2D" uid="uid://b2hud4a8f1ak8" path="res://grafico2.jpg" id="5_u517e"]
+[ext_resource type="Texture2D" uid="uid://bc87lgyd0aix1" path="res://Captura de pantalla_6-10-2024_13735_www.figma.com.jpeg" id="6_w0y0h"]
+[ext_resource type="Texture2D" uid="uid://c32ghw8lyrdyh" path="res://final.jpg" id="7_8osdh"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x5kmc"]
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p1frh"]
+bg_color = Color(0.45098, 0.313726, 0.996078, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchor_right = 1.0
+anchor_bottom = 1.206
+offset_bottom = -0.192078
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3f55r")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.160784, 0.113725, 0.309804, 1)
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.149606
+anchor_right = 0.5
+anchor_bottom = 0.149606
+offset_left = -178.0
+offset_top = -58.7333
+offset_right = -119.0
+offset_bottom = 0.266708
+grow_horizontal = 2
+scale = Vector2(6, 6)
+texture = ExtResource("2_62pcq")
+expand_mode = 1
+
+[node name="Control2" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 380.0
+offset_bottom = -0.99939
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="Control2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = 466.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.054902, 0.00392157, 0.113725, 1)
+
+[node name="Control2" type="Control" parent="Control2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Control2/Control2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.127907
+anchor_top = 0.542258
+anchor_right = 0.872093
+anchor_bottom = 0.715487
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/normal_font = ExtResource("3_s56n6")
+theme_override_font_sizes/normal_font_size = 13
+text = "Approximately 1.11 times the radius of Earth. This makes it a terrestrial-sized planet, which is especially interesting as it could have characteristics similar to our world."
+metadata/_edit_use_anchors_ = true
+
+[node name="Control" type="Control" parent="Control2"]
+layout_mode = 1
+anchor_top = 0.0713004
+anchor_right = 1.0
+anchor_bottom = 0.14479
+grow_horizontal = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="planet size" type="LinkButton" parent="Control2/Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0534884
+anchor_right = 0.0953488
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_fonts/font = ExtResource("3_s56n6")
+theme_override_font_sizes/font_size = 10
+text = "Planet size"
+metadata/_edit_use_anchors_ = true
+
+[node name="orbital" type="LinkButton" parent="Control2/Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.269767
+anchor_right = 0.346512
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_fonts/font = ExtResource("3_s56n6")
+theme_override_font_sizes/font_size = 10
+text = "Orbital period"
+underline = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="star sistem" type="LinkButton" parent="Control2/Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.54186
+anchor_right = 0.593023
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_fonts/font = ExtResource("3_s56n6")
+theme_override_font_sizes/font_size = 10
+text = "Star system"
+underline = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="planet age" type="LinkButton" parent="Control2/Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.774419
+anchor_right = 0.816279
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_fonts/font = ExtResource("3_s56n6")
+theme_override_font_sizes/font_size = 10
+text = "Planet age"
+underline = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="LinkButton" type="LinkButton" parent="Control2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.276744
+anchor_top = 0.874109
+anchor_right = 0.723256
+anchor_bottom = 0.874109
+offset_left = -20.0
+offset_top = -114.862
+offset_right = 20.0
+offset_bottom = -74.8619
+grow_horizontal = 2
+grow_vertical = 2
+action_mode = 0
+text = "click here to full information"
+uri = "https://www.youtube.com/"
+metadata/_edit_use_anchors_ = true
+
+[node name="grafico1" type="TextureRect" parent="Control2"]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.208139
+anchor_top = 0.176375
+anchor_right = 0.79186
+anchor_bottom = 0.401534
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_01kj7")
+stretch_mode = 4
+metadata/_edit_use_anchors_ = true
+
+[node name="grafico2" type="TextureRect" parent="Control2"]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.153488
+anchor_top = 0.150106
+anchor_right = 0.85814
+anchor_bottom = 0.43906
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_u517e")
+expand_mode = 1
+stretch_mode = 4
+metadata/_edit_use_anchors_ = true
+
+[node name="grafico3" type="TextureRect" parent="Control2"]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -136.0
+offset_top = -198.478
+offset_right = 162.0
+offset_bottom = -1.47824
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("6_w0y0h")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="grafico4" type="TextureRect" parent="Control2"]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -187.0
+offset_top = -194.478
+offset_right = 191.0
+offset_bottom = 16.5218
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("7_8osdh")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="back" type="Button" parent="."]
+layout_mode = 0
+offset_right = 87.0
+offset_bottom = 51.0
+text = "back"
+
+[node name="corazon" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.772093
+anchor_top = 0.0196946
+anchor_right = 0.867442
+anchor_bottom = 0.0656487
+offset_left = -4.0
+offset_top = -4.0
+offset_right = 4.0
+offset_bottom = 4.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 20
+text = "🤍"
+flat = true
+metadata/_edit_use_anchors_ = true
+
+[node name="opciones" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.881
+anchor_top = 0.043
+anchor_right = 0.97
+anchor_bottom = 0.065
+offset_left = 0.169983
+offset_top = -19.3001
+offset_right = -0.100006
+offset_bottom = -0.407135
+theme_override_font_sizes/font_size = 22
+text = "⚙"
+flat = true
+
+[node name="Window" type="Window" parent="opciones"]
+title = "Custom Your View"
+initial_position = 2
+size = Vector2i(320, 400)
+theme = ExtResource("4_0moaq")
+
+[node name="ColorRect2" type="ColorRect" parent="opciones/Window"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0980392, 0.0980392, 0.0980392, 1)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="opciones/Window"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "
+Front style (work in progress)
+
+
+
+Nasa Mode (In-depth)"
+
+[node name="on" type="Button" parent="opciones/Window"]
+offset_top = 138.766
+offset_right = 60.57
+offset_bottom = 159.766
+theme_override_styles/normal = SubResource("StyleBoxFlat_x5kmc")
+text = "on"
+
+[node name="off" type="Button" parent="opciones/Window"]
+offset_left = 86.682
+offset_top = 138.766
+offset_right = 147.252
+offset_bottom = 159.766
+theme_override_styles/normal = SubResource("StyleBoxFlat_p1frh")
+text = "off"
+
+[connection signal="pressed" from="Control2/Control/planet size" to="." method="_on_planet_size_pressed"]
+[connection signal="pressed" from="Control2/Control/orbital" to="." method="_on_orbital_pressed"]
+[connection signal="pressed" from="Control2/Control/star sistem" to="." method="_on_star_sistem_pressed"]
+[connection signal="pressed" from="Control2/Control/planet age" to="." method="_on_planet_age_pressed"]
+[connection signal="pressed" from="Control2/LinkButton" to="." method="_on_link_button_pressed"]
+[connection signal="pressed" from="opciones" to="." method="_on_opciones_pressed"]
+[connection signal="close_requested" from="opciones/Window" to="." method="_on_window_close_requested"]
+[connection signal="pressed" from="opciones/Window/on" to="." method="_on_on_pressed"]
+[connection signal="pressed" from="opciones/Window/off" to="." method="_on_off_pressed"]

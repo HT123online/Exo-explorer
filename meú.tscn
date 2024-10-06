@@ -1,0 +1,126 @@
+[gd_scene load_steps=8 format=3 uid="uid://bc7q61akitxw1"]
+
+[ext_resource type="Script" path="res://meú.gd" id="1_opdfk"]
+[ext_resource type="Texture2D" uid="uid://hf7g0ayhho0v" path="res://Copia de 2.PNG" id="3_m0bwg"]
+[ext_resource type="FontFile" uid="uid://0hag6vhegxw4" path="res://nasalization rg.ttf" id="4_154x2"]
+[ext_resource type="FontFile" uid="uid://7dacqaxfilxw" path="res://nasaliza.ttf" id="4_wumbb"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k4mq4"]
+bg_color = Color(0.454902, 0.321569, 0.984314, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_balfq"]
+bg_color = Color(0.81, 0.4779, 0.79893, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uk0u2"]
+bg_color = Color(0.64, 0.3776, 0.631253, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[node name="inicio" type="Control"]
+layout_mode = 3
+anchor_right = 0.998
+anchor_bottom = 1.208
+offset_right = -0.140015
+offset_bottom = 0.543945
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_opdfk")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.231373)
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_m0bwg")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Control"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -147.5
+offset_top = -206.104
+offset_right = 132.5
+offset_bottom = 45.8961
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/normal_font = ExtResource("4_154x2")
+theme_override_font_sizes/normal_font_size = 38
+bbcode_enabled = true
+text = "[center]the
+journey
+begins
+now"
+
+[node name="plot" type="RichTextLabel" parent="Control"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -124.5
+offset_top = -0.103943
+offset_right = 124.5
+offset_bottom = 54.8961
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/normal_font = ExtResource("4_154x2")
+theme_override_font_sizes/normal_font_size = 10
+bbcode_enabled = true
+text = "[center] Plot routes to exoplanets and discover their potential."
+
+[node name="start" type="Button" parent="Control"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -151.5
+offset_top = 140.896
+offset_right = 129.5
+offset_bottom = 178.896
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("4_wumbb")
+theme_override_font_sizes/font_size = 14
+theme_override_styles/normal = SubResource("StyleBoxFlat_k4mq4")
+theme_override_styles/hover = SubResource("StyleBoxFlat_balfq")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_uk0u2")
+text = "START JOURNEY"
+
+[connection signal="pressed" from="Control/start" to="." method="_on_start_pressed"]

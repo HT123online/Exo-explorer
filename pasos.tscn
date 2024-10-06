@@ -1,0 +1,343 @@
+[gd_scene load_steps=9 format=3 uid="uid://bb7fpekei4m5d"]
+
+[ext_resource type="FontFile" uid="uid://0hag6vhegxw4" path="res://nasalization rg.ttf" id="1_llr3b"]
+[ext_resource type="Script" path="res://pasos.gd" id="1_sbj0i"]
+[ext_resource type="Texture2D" uid="uid://c6vlnivy8us75" path="res://13.png" id="2_s5oun"]
+[ext_resource type="FontFile" uid="uid://db1yy8niki1pn" path="res://Montserrat-Regular.ttf" id="4_g6ljl"]
+[ext_resource type="Texture2D" uid="uid://cf1kmamswnysk" path="res://14.png" id="4_n6s26"]
+[ext_resource type="Texture2D" uid="uid://dltfq28ua4dkv" path="res://2.png" id="4_odqg0"]
+[ext_resource type="Texture2D" uid="uid://cvjcaod4w7ar5" path="res://5.png" id="6_sqdot"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6ixro"]
+bg_color = Color(0.454902, 0.321569, 0.984314, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchor_right = 1.0
+anchor_bottom = 1.207
+offset_bottom = 0.175964
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_sbj0i")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0509804, 0.0117647, 0.101961, 1)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -168.0
+offset_top = 128.5
+offset_right = 168.0
+offset_bottom = 199.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/default_color = Color(0.116, 0.0825, 0.25, 1)
+theme_override_font_sizes/normal_font_size = 45
+bbcode_enabled = true
+text = "[center][color=#9EFECA].[/color]..."
+
+[node name="parte 1" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ready to explore" type="RichTextLabel" parent="parte 1"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.290698
+anchor_top = 0.21363
+anchor_right = 0.709302
+anchor_bottom = 0.21363
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/normal_font = ExtResource("1_llr3b")
+bbcode_enabled = true
+text = "[center]Ready to explore?"
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect" type="TextureRect" parent="parte 1"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -137.0
+offset_top = -226.5
+offset_right = 131.0
+offset_bottom = 41.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_s5oun")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="trace" type="RichTextLabel" parent="parte 1"]
+texture_filter = 5
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.265116
+anchor_top = 0.583224
+anchor_right = 0.734884
+anchor_bottom = 0.583224
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/normal_font = ExtResource("4_g6ljl")
+theme_override_font_sizes/normal_font_size = 11
+bbcode_enabled = true
+text = "[center]Trace paths to exoplanets and uncover their potential."
+metadata/_edit_use_anchors_ = true
+
+[node name="parte 2" type="Control" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="universe" type="RichTextLabel" parent="parte 2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.265116
+anchor_top = 0.21363
+anchor_right = 0.734884
+anchor_bottom = 0.21363
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/normal_font = ExtResource("1_llr3b")
+bbcode_enabled = true
+text = "[center]The universe in your hands!"
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect" type="TextureRect" parent="parte 2"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -166.0
+offset_top = -213.5
+offset_right = 96.0
+offset_bottom = 46.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_n6s26")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="RichTextLabel" type="RichTextLabel" parent="parte 2"]
+texture_filter = 3
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.127907
+anchor_top = 0.585845
+anchor_right = 0.872093
+anchor_bottom = 0.585845
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/normal_font = ExtResource("4_g6ljl")
+theme_override_font_sizes/normal_font_size = 11
+bbcode_enabled = true
+text = "[center]Swipe, rotate, and find habitable worlds."
+metadata/_edit_use_anchors_ = true
+
+[node name="parte 3" type="Control" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="discover" type="RichTextLabel" parent="parte 3"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.404651
+anchor_top = 0.21363
+anchor_right = 0.595349
+anchor_bottom = 0.21363
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/normal_font = ExtResource("1_llr3b")
+bbcode_enabled = true
+text = "[center]Discover in 3D"
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect" type="TextureRect" parent="parte 3"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -98.0
+offset_top = -172.5
+offset_right = 98.0
+offset_bottom = 23.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_odqg0")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="bisualize" type="RichTextLabel" parent="parte 3"]
+texture_filter = 4
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -160.0
+offset_top = 45.5
+offset_right = 160.0
+offset_bottom = 85.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/normal_font = ExtResource("4_g6ljl")
+theme_override_font_sizes/normal_font_size = 11
+bbcode_enabled = true
+text = "[center]Visualize orbits and easily filter planets."
+
+[node name="parte 4" type="Control" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="galactic" type="RichTextLabel" parent="parte 4"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.22093
+anchor_top = 0.21363
+anchor_right = 0.77907
+anchor_bottom = 0.21363
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/normal_font = ExtResource("1_llr3b")
+bbcode_enabled = true
+text = "[center]Galactic adventurer activated! ✨"
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect" type="TextureRect" parent="parte 4"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -97.0
+offset_top = -179.5
+offset_right = 97.0
+offset_bottom = 14.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("6_sqdot")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="good luck" type="RichTextLabel" parent="parte 4"]
+texture_filter = 3
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -114.0
+offset_top = 45.5
+offset_right = 114.0
+offset_bottom = 85.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/normal_font = ExtResource("4_g6ljl")
+theme_override_font_sizes/normal_font_size = 11
+bbcode_enabled = true
+text = "[center]The journey begins now.
+Good luck!"
+
+[node name="account" type="RichTextLabel" parent="parte 4"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.230233
+anchor_top = 0.910878
+anchor_right = 0.769767
+anchor_bottom = 0.910878
+offset_left = -20.0
+offset_top = -40.0
+offset_right = 20.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/normal_font = ExtResource("4_g6ljl")
+bbcode_enabled = true
+text = "[center]Do not have an account? [color=#7452FB]Sing Up"
+metadata/_edit_use_anchors_ = true
+
+[node name="next" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.139535
+anchor_top = 0.783748
+anchor_right = 0.860465
+anchor_bottom = 0.825688
+offset_left = -4.0
+offset_top = -8.0
+offset_right = 4.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("4_g6ljl")
+theme_override_font_sizes/font_size = 14
+theme_override_styles/normal = SubResource("StyleBoxFlat_6ixro")
+text = "Next"
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="next" to="." method="_on_next_pressed"]

@@ -1,0 +1,673 @@
+[gd_scene load_steps=11 format=3 uid="uid://bl3ji1d0fad4i"]
+
+[ext_resource type="Script" path="res://principal.gd" id="1_5ts4q"]
+[ext_resource type="FontFile" uid="uid://0hag6vhegxw4" path="res://nasalization rg.ttf" id="2_3ewyp"]
+[ext_resource type="Texture2D" uid="uid://cfnokcoqxefry" path="res://1.png" id="2_8b3jy"]
+[ext_resource type="Texture2D" uid="uid://7wgllyy05gho" path="res://1d8d72663890c5251d57bb69c215b3d7.jpg" id="2_tfjvb"]
+[ext_resource type="Texture2D" uid="uid://bdgo5n8s5wxev" path="res://10.png" id="3_cbsx3"]
+[ext_resource type="Texture2D" uid="uid://dvm3q34jcvqi7" path="res://8.png" id="3_ellbb"]
+[ext_resource type="Texture2D" uid="uid://b73g0tcjv7boc" path="res://7.png" id="5_q7cuy"]
+[ext_resource type="PackedScene" uid="uid://5avfljh4tbxa" path="res://informacion.tscn" id="8_yei3g"]
+[ext_resource type="Texture2D" uid="uid://drmfj3fxk245w" path="res://iconos.jpg" id="8_ysatq"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lcexy"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchor_right = 1.0
+anchor_bottom = 1.204
+offset_bottom = 0.0718994
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5ts4q")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.160784, 0.113725, 0.309804, 1)
+
+[node name="exo 4" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect3" type="TextureRect" parent="exo 4"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.537209
+anchor_top = 0.528252
+anchor_right = 0.760465
+anchor_bottom = 0.693824
+offset_right = 55.0
+offset_bottom = 98.0
+texture = ExtResource("2_tfjvb")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect" type="TextureRect" parent="exo 4"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.551163
+anchor_top = 0.60184
+anchor_right = 0.706977
+anchor_bottom = 0.689882
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_8b3jy")
+expand_mode = 1
+stretch_mode = 4
+metadata/_edit_use_anchors_ = true
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="exo 4"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.593023
+anchor_top = 0.758213
+anchor_right = 0.765116
+anchor_bottom = 0.758213
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 9
+bbcode_enabled = true
+text = "[indent]Rocky, dense atmosphere, possibly life-supporting."
+metadata/_edit_use_anchors_ = true
+
+[node name="RichTextLabel" type="RichTextLabel" parent="exo 4"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.611628
+anchor_top = 0.729304
+anchor_right = 0.788372
+anchor_bottom = 0.729304
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+bbcode_enabled = true
+text = "LHS 1140b"
+metadata/_edit_use_anchors_ = true
+
+[node name="exo 3" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect3" type="TextureRect" parent="exo 3"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.111628
+anchor_top = 0.528252
+anchor_right = 0.334884
+anchor_bottom = 0.693824
+offset_right = 55.0
+offset_bottom = 98.0
+texture = ExtResource("2_tfjvb")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect" type="TextureRect" parent="exo 3"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.125581
+anchor_top = 0.60184
+anchor_right = 0.281395
+anchor_bottom = 0.689882
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_cbsx3")
+expand_mode = 1
+stretch_mode = 4
+metadata/_edit_use_anchors_ = true
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="exo 3"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.167442
+anchor_top = 0.758213
+anchor_right = 0.339535
+anchor_bottom = 0.758213
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 9
+bbcode_enabled = true
+text = "[indent]Lava-filled surface, extreme heateverywhere."
+metadata/_edit_use_anchors_ = true
+
+[node name="RichTextLabel" type="RichTextLabel" parent="exo 3"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.183721
+anchor_top = 0.729304
+anchor_right = 0.344186
+anchor_bottom = 0.729304
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+bbcode_enabled = true
+text = "55 Cancri e"
+metadata/_edit_use_anchors_ = true
+
+[node name="exo 1" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect3" type="TextureRect" parent="exo 1"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.109302
+anchor_top = 0.2523
+anchor_right = 0.332558
+anchor_bottom = 0.417871
+offset_right = 55.0
+offset_bottom = 98.0
+texture = ExtResource("2_tfjvb")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect" type="TextureRect" parent="exo 1"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.123256
+anchor_top = 0.325887
+anchor_right = 0.27907
+anchor_bottom = 0.413929
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_ellbb")
+expand_mode = 1
+stretch_mode = 4
+metadata/_edit_use_anchors_ = true
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="exo 1"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.165116
+anchor_top = 0.48226
+anchor_right = 0.337209
+anchor_bottom = 0.48226
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 9
+bbcode_enabled = true
+text = "[indent]Potencially habitable, rocky and temperate"
+metadata/_edit_use_anchors_ = true
+
+[node name="RichTextLabel" type="RichTextLabel" parent="exo 1"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.186047
+anchor_top = 0.455979
+anchor_right = 0.346512
+anchor_bottom = 0.455979
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Kepler-452b"
+metadata/_edit_use_anchors_ = true
+
+[node name="exo 2" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect3" type="TextureRect" parent="exo 2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.537209
+anchor_top = 0.2523
+anchor_right = 0.760465
+anchor_bottom = 0.417871
+offset_right = 55.0
+offset_bottom = 98.0
+texture = ExtResource("2_tfjvb")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect" type="TextureRect" parent="exo 2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.551163
+anchor_top = 0.325887
+anchor_right = 0.706977
+anchor_bottom = 0.413929
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_q7cuy")
+expand_mode = 1
+stretch_mode = 4
+metadata/_edit_use_anchors_ = true
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="exo 2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.593023
+anchor_top = 0.48226
+anchor_right = 0.765116
+anchor_bottom = 0.48226
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 9
+bbcode_enabled = true
+text = "[indent]Scorching hot, atmosphere being stripped away"
+metadata/_edit_use_anchors_ = true
+
+[node name="RichTextLabel" type="RichTextLabel" parent="exo 2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.609302
+anchor_top = 0.454665
+anchor_right = 0.788372
+anchor_bottom = 0.454665
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Wasp-12b"
+metadata/_edit_use_anchors_ = true
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="welcome" type="RichTextLabel" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.190698
+anchor_top = 0.0551905
+anchor_right = 0.191
+anchor_bottom = 0.0551905
+offset_right = 154.87
+offset_bottom = 18.0
+theme_override_fonts/normal_font = ExtResource("2_3ewyp")
+theme_override_font_sizes/normal_font_size = 12
+bbcode_enabled = true
+text = "Welcome back!"
+metadata/_edit_use_anchors_ = true
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.155
+anchor_top = 0.142
+anchor_right = 0.239
+anchor_bottom = 0.142
+offset_left = -16.65
+offset_top = -26.062
+offset_right = 89.23
+offset_bottom = -0.0619888
+theme_override_fonts/normal_font = ExtResource("2_3ewyp")
+theme_override_font_sizes/normal_font_size = 0
+bbcode_enabled = true
+text = "Explore"
+
+[node name="ColorRect" type="Button" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.816279
+anchor_top = 0.131477
+anchor_right = 0.816279
+anchor_bottom = 0.131477
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "🔍"
+metadata/_edit_use_anchors_ = true
+
+[node name="TextEdit" type="TextEdit" parent="Control"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -165.0
+offset_top = -280.352
+offset_right = 165.0
+offset_bottom = -246.352
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/background_color = Color(0.603923, 0.603923, 0.603923, 1)
+theme_override_colors/font_color = Color(0.106237, 0.106237, 0.106237, 1)
+theme_override_colors/font_placeholder_color = Color(0.0646964, 0.0646966, 0.0646963, 1)
+theme_override_fonts/font = ExtResource("2_3ewyp")
+placeholder_text = "🔍Search..."
+
+[node name="Button" type="Button" parent="Control"]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.111628
+anchor_top = 0.136662
+anchor_right = 0.888372
+anchor_bottom = 0.185283
+offset_left = -4.0
+offset_right = 4.0
+offset_bottom = 8.0
+grow_horizontal = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_lcexy")
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect2" type="ColorRect" parent="Control"]
+visible = false
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -215.0
+offset_top = -84.0
+offset_right = 215.0
+grow_horizontal = 2
+grow_vertical = 0
+color = Color(0.054902, 0.0470588, 0.129412, 1)
+
+[node name="TextureRect" type="TextureRect" parent="Control"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -226.0
+offset_top = -91.0
+offset_right = 226.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("8_ysatq")
+stretch_mode = 4
+
+[node name="Button" type="Button" parent="Control/TextureRect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.103982
+anchor_top = 0.431825
+anchor_right = 0.161504
+anchor_bottom = 0.673583
+offset_left = -4.0
+offset_top = -8.0
+offset_right = 4.0
+grow_horizontal = 2
+grow_vertical = 0
+flat = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Button2" type="Button" parent="Control/TextureRect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.588496
+anchor_top = 0.43956
+anchor_right = 0.650442
+anchor_bottom = 0.714286
+offset_left = -4.0
+offset_top = -8.0
+offset_right = 4.0
+grow_horizontal = 2
+grow_vertical = 0
+flat = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Button3" type="Button" parent="Control/TextureRect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.840708
+anchor_top = 0.420836
+anchor_right = 0.900442
+anchor_bottom = 0.717539
+offset_left = -4.0
+offset_top = -8.0
+offset_right = 4.0
+grow_horizontal = 2
+grow_vertical = 0
+flat = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Button4" type="Button" parent="Control/TextureRect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.347345
+anchor_top = 0.428571
+anchor_right = 0.409292
+anchor_bottom = 0.67033
+offset_left = -4.0
+offset_top = -8.0
+offset_right = 4.0
+grow_horizontal = 2
+grow_vertical = 0
+flat = true
+metadata/_edit_use_anchors_ = true
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.160465
+anchor_top = 0.145861
+anchor_right = 0.488372
+anchor_bottom = 0.145861
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+bbcode_enabled = true
+text = "exoplanets"
+metadata/_edit_use_anchors_ = true
+
+[node name="LinkButton" type="LinkButton" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.187209
+anchor_top = 0.289093
+anchor_right = 0.187209
+anchor_bottom = 0.289093
+offset_left = -30.5
+offset_top = -20.0
+offset_right = 30.5
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 12
+text = "Popular"
+metadata/_edit_use_anchors_ = true
+
+[node name="LinkButton2" type="LinkButton" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.39186
+anchor_top = 0.289093
+anchor_right = 0.39186
+anchor_bottom = 0.289093
+offset_left = -58.5
+offset_top = -20.0
+offset_right = 58.5
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 12
+disabled = true
+text = "Recommended"
+underline = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="LinkButton3" type="LinkButton" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.555814
+anchor_top = 0.289093
+anchor_right = 0.555814
+anchor_bottom = 0.289093
+offset_left = -30.5
+offset_top = -20.0
+offset_right = 30.5
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 12
+disabled = true
+text = "Category"
+underline = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="1" type="Button" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.125581
+anchor_top = 0.35718
+anchor_right = 0.446512
+anchor_bottom = 0.51824
+offset_left = -4.0
+offset_top = -4.0
+offset_right = 4.0
+offset_bottom = 4.0
+grow_horizontal = 2
+grow_vertical = 2
+flat = true
+metadata/_edit_use_anchors_ = true
+
+[node name="n2" type="Button" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.553488
+anchor_top = 0.36485
+anchor_right = 0.874419
+anchor_bottom = 0.519336
+offset_left = -4.0
+offset_top = -4.0
+offset_right = 4.0
+offset_bottom = 4.0
+grow_horizontal = 2
+grow_vertical = 2
+flat = true
+metadata/_edit_use_anchors_ = true
+
+[node name="n3" type="Button" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.125581
+anchor_top = 0.633283
+anchor_right = 0.446512
+anchor_bottom = 0.793247
+offset_left = -4.0
+offset_top = -4.0
+offset_right = 4.0
+offset_bottom = 4.0
+grow_horizontal = 2
+grow_vertical = 2
+flat = true
+metadata/_edit_use_anchors_ = true
+
+[node name="n4" type="Button" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.553488
+anchor_top = 0.633283
+anchor_right = 0.874419
+anchor_bottom = 0.795439
+offset_left = -4.0
+offset_top = -4.0
+offset_right = 4.0
+offset_bottom = 4.0
+grow_horizontal = 2
+grow_vertical = 2
+flat = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Control2" type="Control" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Control" parent="Control2" instance=ExtResource("8_yei3g")]
+layout_mode = 1
+
+[node name="RichTextLabel" parent="Control2/Control/Control2/Control2" index="0"]
+bbcode_enabled = true
+
+[node name="LinkButton" parent="Control2/Control/Control2" index="3"]
+anchor_top = 0.633556
+anchor_bottom = 0.633556
+
+[node name="Window" parent="Control2/Control/opciones" index="0"]
+visible = false
+
+[connection signal="pressed" from="Control/ColorRect" to="." method="_on_color_rect_pressed"]
+[connection signal="text_changed" from="Control/TextEdit" to="." method="_on_text_edit_text_changed"]
+[connection signal="pressed" from="Control/1" to="." method="_on__pressed"]
+[connection signal="pressed" from="Control/n2" to="." method="_on_n_2_pressed"]
+[connection signal="pressed" from="Control/n3" to="." method="_on_n_3_pressed"]
+[connection signal="pressed" from="Control/n4" to="." method="_on_n_4_pressed"]
+[connection signal="visibility_changed" from="Control2" to="." method="_on_control_2_visibility_changed"]
+[connection signal="pressed" from="Control2/Control/back" to="." method="_on_back_pressed"]
+
+[editable path="Control2/Control"]
